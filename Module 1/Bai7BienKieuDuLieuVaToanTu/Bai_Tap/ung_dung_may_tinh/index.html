@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" name="number" id="s1">
+    <input type="text" name="number" id="s2">
+    <br>
+    <input type="button" value="Addition(+)" onclick="cong();">
+    <input type="button" value="Subtraction(-)" onclick="tru();">
+    <input type="button" value="Multiplication(X)" onclick="nhan();">
+    <input type="button" value="Division(/)" onclick="chia();">
+</form>
+<p id="abc"></p>
+<script>
+    function cong(){
+        let A = document.getElementById('s1').value;
+        let B = document.getElementById('s2').value;
+        let a = parseInt(A);
+        let b = parseInt(B);
+        let C = a+b;
+        document.getElementById('abc').innerHTML = "Kết quả =" + C;
+    }
+    function tru(){
+        let A = document.getElementById('s1').value;
+        let B = document.getElementById('s2').value;
+        let a = parseInt(A);
+        let b = parseInt(B);
+        let D = a-b;
+        document.getElementById('abc').innerHTML = "Kết quả =" + D ;
+    }
+    function nhan(){
+        let A = document.getElementById('s1').value;
+        let B = document.getElementById('s2').value;
+        let a = parseInt(A);
+        let b = parseInt(B);
+        let E = a*b;
+        document.getElementById('abc').innerHTML = "Kết quả =" + E ;
+    }
+    function chia(){
+        let A = document.getElementById('s1').value;
+        let B = document.getElementById('s2').value;
+        let a = parseInt(A);
+        let b = parseInt(B);
+        let F = a/b;
+        document.getElementById('abc').innerHTML = "Kết quả =" + F ;
+    }
+</script>
+</body>
+</html>
