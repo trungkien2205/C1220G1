@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>
+/*
+    bài 1
+*/
+let i;
+for(i=1;i<100;i++){
+    document.write(i + "\n");
+}
+if(i = 99){
+    document.write("Đã hoàn thành ");
+}
+</script>-->
+<!--
+Bài 2
+-->
+<!--<script>
+    let nhietDo = parseInt(prompt("Nhập nhiệt độ"));
+    if (nhietDo >100){
+        alert("Yêu cầu giảm nhiệt độ");
+    }else if(nhietDo<20){
+        alert("Yêu cầu tăng nhiệt độ");
+    }else {
+        alert("Nhiệt độ bình thường");
+    }
+</script>-->
+<!--
+Bài 3
+-->
+<!--<script>
+    let count;
+    let a = 0;
+    let b = 1;
+    let numbers=20;
+    let tempt = 0;
+    for(count=0;count<numbers;count++){
+        tempt = b;
+        b = a + b;
+        a=tempt;
+        document.write(tempt + "<br>");
+    }
+</script>-->
+<!--
+Bài 4
+-->
+<!--<script>
+    let count;
+    let a = 0;
+    let b = 1;
+    let numbers=20;
+    let tempt = 0;
+    for(count=0;count<numbers;count++){
+        tempt = b;
+        b = a + b;
+        a=tempt;
+        if(tempt%5===0) {
+            document.write(tempt);
+            break;
+        }
+    }
+</script>-->
+<!--Bài 5-->
+<!--<script>
+    let count;
+    let a = 0;
+    let b = 1;
+    let numbers=20;
+    let tempt = 0;
+    let total =0;
+    for(count=0;count<numbers;count++){
+        tempt = b;
+        b = a + b;
+        a=tempt;
+        total += a;
+        document.write(tempt + "<br>");
+    }
+    document.write("Tổng cộng : " + total);
+</script>-->
+<!--Bài 6-->
+<!--<script>
+    let a ;
+    let N= 30;
+    let i=1;
+    let C= 0;
+    for(a=7;i <= N; a+=7,i++){
+        C += a;
+    }
+    document.write("Tổng 30 số đầu tiên chia hết cho 7 =" + C);
+</script>-->
+<!--Bài 7-->
+<!--<script>
+    let i;
+    for(i=1;i<100;i++){
+        if (i%3===0) {
+            if (i % 5 === 0) {
+                document.write("FizzBuzz"+"<br>");
+            } else {
+                document.write("Fizz"+"<br>");
+            }
+        }else if(i%5===0){
+            document.write("Buzz"+"<br>");
+        }else {
+            document.write(i+"<br>");
+        }
+    }
+</script>-->
+<!--Bài 8-->
+<h1>"Hãy Thử Đoán Xem"</h1>
+<input type="text" name="number" id="s1"/> Trong khoảng từ<br>
+<input type="text" name="number" id="s2"/> Đến <br>
+<input type="button" value="Chơi" onclick="game()"/>
+<script>
+function game(){
+    let a = parseInt(document.getElementById("s1").value);
+    let b = parseInt(document.getElementById("s2").value);
+    let random= (Math.floor(Math.random() * (b-a)) + a);
+    alert(random);
+}
+</script>
+</body>
+</html>

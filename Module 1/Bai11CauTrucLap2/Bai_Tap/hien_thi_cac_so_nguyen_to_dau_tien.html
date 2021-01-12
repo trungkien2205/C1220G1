@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = 20;
+    let count = 0;
+    let N = 2;
+    let ketQua ="";
+    while(count < numbers) {
+        let check = true;
+        for (let i = 2; i < N; i++) {
+            if (N % i === 0) {
+                check = false;
+                break;
+            }}
+        if (check) {
+            ketQua+= N +"<br>";
+            count++;
+        }
+        N++;
+    }
+    document.write(ketQua);
+</script>
+</body>
+</html>
