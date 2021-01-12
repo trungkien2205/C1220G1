@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1-->
+<!--<script>
+    let count;
+    let a = 0;
+    let b = 1;
+    let numbers=20;
+    let tempt = 0;
+    let total =0;
+    for(count=0;count<numbers;count++){
+        tempt = b;
+        b = a + b;
+        a=tempt;
+        total += a;
+        document.write(tempt + "<br>");
+    }
+    document.write("Tổng cộng : " + total);
+</script>-->
+
+
+<!--Bài 2-->
+<!--<script>
+    let a=parseInt(prompt("Nhập số nguyên dương"));
+    let i;
+    let total=1;
+    let b;
+    for(i=a;i>0;i&#45;&#45;){
+        b= total*i;
+        total = b;
+    }
+    alert("Giai thừa ="+ total );
+</script>-->
+
+
+<!--Bài 3-->
+<!--<script>
+let i;
+let j;
+for(i=1;i<=5;i++){
+    for(j=1;j<=i;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+}
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+for(i=5;i>=1;i&#45;&#45;){
+    for(j=i;j>=1;j&#45;&#45;){
+        document.write("*");
+    }
+    document.write("<br>");
+}
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+let k;
+for(i=1;i<=5;i++){
+    for(k=5;k>=i;k&#45;&#45;){
+        document.write("&nbsp&nbsp");
+    }
+    for(j=1;j<=i;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+}
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+for(i=5;i>=1;i&#45;&#45;) {
+    for (k = 5; k >= i; k&#45;&#45;) {
+        document.write("&nbsp&nbsp");
+    }
+    for (j = i; j >= 1; j&#45;&#45;) {
+        document.write("*");
+    }
+    document.write("<br>");
+}
+
+</script>-->
+
+<!--Bài 5-->
+<script>
+let money=parseInt(prompt("Nhập số tiền muốn gởi :"));
+let month=parseInt(prompt("Nhập số tháng muốn gởi :"));
+let laiSuat= 0.01;
+let result;
+for(let i=1;i<=month;i++){
+    result = money + (money * laiSuat);
+    money = result
+}
+alert("Số tiền nhận được sẽ là :"+ money);
+</script>
+</body>
+</html>
