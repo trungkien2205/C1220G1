@@ -120,8 +120,18 @@ function game(){
     let a = parseInt(document.getElementById("s1").value);
     let b = parseInt(document.getElementById("s2").value);
     let random= (Math.floor(Math.random() * (b-a)) + a);
-    alert(random);
+    let c = parseInt(prompt("Nhập dự đoán"));
+    while(c!==random){
+        if(c<random){
+            alert("Cao hơn");
+        }else{
+            alert("Thấp hơn");
+        }
+        c = parseInt(prompt("Nhập dự đoán"));
+    }
+    alert("Chúc mừng");
 }
+
 </script>
 </body>
 </html>
