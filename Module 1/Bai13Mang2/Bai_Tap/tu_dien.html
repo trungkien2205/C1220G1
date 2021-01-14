@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển </title>
+</head>
+<body>
+<input type="text" id="s1"/>
+<input type="button" value="Dịch" onclick="trans()"/>
+<p id="result"></p>
+<script>
+    let eng=["Hello","Sorry","Good","One","two","three"];
+    let vnm=["Xin chào","Xin lỗi","Tốt","Một","Hai","Ba"];
+
+    function trans(){
+       let engLish = document.getElementById("s1").value;
+       for(let i =0; i<eng.length;i++){
+           if (eng[i]===engLish){
+               document.getElementById("result").innerHTML= vnm[i];
+           }
+       }
+    }
+</script>
+</body>
+</html>

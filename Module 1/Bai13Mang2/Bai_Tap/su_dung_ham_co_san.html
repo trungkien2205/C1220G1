@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1-->
+<!--<script>
+    let myColor=["Black","Green","Red","Yelow","Blue","Orange"];
+    document.write(myColor.join());
+</script>-->
+
+<!--Bài 2-->
+<!--<script>
+    let num=prompt("nhập dẫy số");
+    let str=num.toString();
+    let result=[str[0]];
+    for(let x=1;x<str.length;x++){
+        if((str[x-1]%2===0)&&(str[x]%2===0)){
+            result.push("-");
+        }else{
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(" "));
+</script>-->
+
+<!--Bài 3-->
+<script>
+    let str = "The Quick Brown Fox";
+    let result = [];
+
+    for(let x=0; x<str.length; x++) {
+        if((str[x].charCodeAt(0)>=65)&&(str[x].charCodeAt(0)<=90)) {
+            result.push(str[x].toLowerCase());
+        }
+        else if((str[x].charCodeAt(0)>=92)&&(str[x].charCodeAt(0)<=122)) {
+            result.push(str[x].toUpperCase());
+        }
+    }
+    document.write(result.join(''));
+
+</script>
+</body>
+</html>

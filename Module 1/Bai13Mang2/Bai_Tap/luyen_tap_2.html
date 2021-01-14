@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1-->
+<!--<script>
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for(let i=0;i<a.length;i++){
+        document.write("row"+ i + "<br>");
+        for (let j=0;j<a[i].length;j++){
+            document.write(a[i][j] + "<br>");
+        }
+    }
+</script>-->
+
+<!--Bài 2-->
+<!--<script>
+    let array=[ 'c', 's', 'c', '2', '6', '1'];
+    array.reverse();
+    let c=array.join("");
+    alert(c);
+</script>-->
+
+<!--Bài 3-->
+<!--<script>
+    let array=['c','s','c',2,6,1];
+    let total=0;
+    for ( let i=0;i<array.length;i++){
+        let check = isNaN(array[i]);
+        if (!check){
+            total += 1;
+        }
+    }alert("Có " + total +" kí tự số");
+</script>-->
+
+
+<!--Bài 4-->
+<!--<script>
+    let array=prompt("Nhập chuỗi ");
+    let total=0;
+    array.trim();
+    for ( let i=0;i<array.length;i++){
+        if ((array[i]!==" ")&&(array[i+1]===" ")){
+                total += 1;
+        }
+    }alert("Có " + total +" từ trong ");
+</script>-->
+
+<!--Bài 6-->
+<script>
+    let txt = prompt("Nhập vào 1 chuỗi");
+    let array=[];
+    for( let i=0;i<txt.length;i++){
+        array[i]= txt[i];
+    }
+    for (let x=0 ; x< array.length;x++){
+        if(array[x]==="-"){
+            array.splice(x,1,"_");
+        }
+    }
+    alert(array.join(""));
+</script>
+</body>
+</html>
