@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Add New Product</h3>
+<input type="text" id="tenSP"/>
+<input type="button" onclick="addSP()" value="Add"/></br>
+<h3>Display All Product</h3>
+<p id="hienthi"></p>
+<script>
+    let sanPham=["Iphone","SamSung","Nokia"];
+    hienThiSP();
+    function hienThiSP(){
+        let tableString='<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Tên Sản Phẩm </th>\n' +
+            '        <th>Update</th>\n' +
+            '        <th>Delete</th>\n' +
+            '    </tr>';
+        for(let i=0;i<sanPham.length;i++){
+            tableString+= '<tr>\n' +
+                '        <td>'+(i+1)+'</td>\n' +
+                '        <td>'+sanPham[i]+'</td>\n' +
+                '        <td><button onclick="suaSP('+i+')"> Sửa</button></td>\n' +
+                '        <td><button onclick="xoaSP('+i+')"> Xoá</button></td>\n' +
+                '    </tr>';
+        }
+        tableString +='</table>';
+        document.getElementById('hienthi').innerHTML= tableString;
+    }
+    function addSP(){
+        let nhap=document.getElementById('tenSP').value;
+        if(nhap!=""){
+            sanPham.push(nhap);
+        } else{
+            alert("Bạn cần nhập tên");
+        }
+        hienThiSP();
+    }
+    function suaSP(id){
+        let nhap=prompt("Nhập tên sửa");
+        if(nhap){
+            sanPham[id]=nhap;
+        }
+        hienThiSP();
+    }
+    function xoaSP(id){
+        let xacNhanXoa=confirm("Bạn có muốn xoá "+ sanPham[id]);
+        if (xacNhanXoa){
+            sanPham.splice(id,1);
+        }
+        hienThiSP();
+    }
+</script>
+</body>
+</html>
