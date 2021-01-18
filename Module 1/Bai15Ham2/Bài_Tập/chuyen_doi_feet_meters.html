@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="feet"/>
+<input type="button" onclick="changeFeet()" value="Change Meters"/></br>
+<input type="text" id="met"/>
+<input type="button" onclick="changeMeters()" value="Change Feet"/></br>
+<p id="result"></p>
+<script>
+    function changeFeet(){
+        let feet=parseInt(document.getElementById('feet').value);
+        let met= feet*3.2787;
+        document.getElementById("result").innerHTML= "= " + met + "feet";
+    }
+    function changeMeters(){
+        let met=parseInt(document.getElementById("met").value);
+        let feet=met*0.305;
+        document.getElementById('result').innerHTML= "= "+feet + "m";
+    }
+</script>
+</body>
+</html>
