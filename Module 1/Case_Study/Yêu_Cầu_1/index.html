@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name=prompt("Nhập họ và tên:");
+    let cmnd=prompt("Nhập CMND");
+    let birthday=prompt("Nhập ngày sinh");
+    let emailAddress=prompt("Nhập email");
+    let address=prompt("Nhập địa chỉ ");
+    let typeCustomer=prompt("Nhập loại khách hàng ");
+    let discount=prompt("Nhập giảm giá");
+    let quantityIncluded=prompt("Nhập số lượng đi kèm");
+    let rentDays=prompt("Nhập số ngày thuê");
+    let typeService=prompt("Nhập loại dịch vụ");
+    let typeRoom=prompt("Nhập loại phòng");
+    let total;
+    if(typeService==="Room"){
+        total= 100*rentDays*(1-(discount/100));
+    }else if(typeService==="House"){
+        total= 300*rentDays*(1-(discount/100));
+    }else{
+        total= 500*rentDays*(1-(discount/100));
+    }
+    alert("name :"+ name + "\n"+
+        "CMND :" + cmnd + "\n"+
+        "Birthday :" + birthday + "\n"+
+            "email :" + emailAddress + "\n"+
+            "Address :" + address + "\n"+
+            "Customer Type :" + typeCustomer + "\n"+
+            "Discount :" + discount + "\n"+
+            "Quantity Included : " +quantityIncluded + "\n"+
+            "Rent Days :" + rentDays + "\n"+
+            "Service type :" +typeService + "\n"+
+            "Room type :" + typeRoom + "\n"+
+            "Total :" + total
+    );
+
+</script>
+</body>
+</html>
